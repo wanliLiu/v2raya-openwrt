@@ -30,8 +30,12 @@ jobs:
           PACKAGES: ca-certificates v2fly-geodata v2ray-core xray-core v2raya luci-app-v2raya
           NO_REFRESH_CHECK: 1
 
+      - name: Move created packages to project dir
+        run: cp bin/packages/${{ matrix.arch }}/v2raya_ci/*.ipk . || true
+
       - name: Store packages
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
+        if: github.event_name != 'release'
         with:
-          name: ${{ matrix.arch}}-packages
-          path: bin/packages/${{ matrix.arch }}/packages/*.ipk
+          name: ${{ matrix.arch }}-${{ github.sha }}-packages
+          path: "*.ipk"
