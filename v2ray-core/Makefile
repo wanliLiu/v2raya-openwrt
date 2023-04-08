@@ -5,12 +5,12 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=v2ray-core
-PKG_VERSION:=5.4.1
+PKG_VERSION:=5.4.0
 PKG_RELEASE:=1
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
-PKG_SOURCE_URL:=https://codeload.github.com/v2fly/v2ray-core/tar.gz/v$(PKG_VERSION)?
-PKG_HASH:=e208bca255c4689a30104e965039d73fa138a7a6e902f820cff94b5b772b042b
+PKG_SOURCE_URL:=http://phone.kiwisec.com:23236/openwrt/v2ray-core-5.4.1.tar.gz
+PKG_HASH:=d58c435fb2b968e0af35a80a4f1235ceac54029925aa9f1dfe5c7032c8b93f81
 
 PKG_LICENSE:=MIT
 PKG_LICENSE_FILES:=LICENSE
@@ -23,7 +23,7 @@ PKG_USE_MIPS16:=0
 GO_PKG:=github.com/v2fly/v2ray-core/v5
 GO_PKG_BUILD_PKG:=$(GO_PKG)/main
 GO_PKG_LDFLAGS_X:= \
-	$(GO_PKG).build=OpenWrt \
+	$(GO_PKG).build=OpenWrt-Kiwi \
 	$(GO_PKG).version=$(PKG_VERSION)
 
 include $(INCLUDE_DIR)/package.mk
