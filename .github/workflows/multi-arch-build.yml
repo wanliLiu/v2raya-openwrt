@@ -16,7 +16,8 @@ jobs:
         include:
           - arch: mips_24kc
             runtime_test: false
-
+          - arch: x86_64
+            runtime_test: true
     steps:
       - uses: actions/checkout@v3
         with:
