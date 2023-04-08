@@ -9,7 +9,7 @@ PKG_VERSION:=5.4.0
 PKG_RELEASE:=1
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
-PKG_SOURCE_URL:=http://phone.kiwisec.com:23236/openwrt/v2ray-core-5.4.1.tar.gz
+PKG_SOURCE_URL:=http://phone.kiwisec.com:23236/openwrt/
 PKG_HASH:=d58c435fb2b968e0af35a80a4f1235ceac54029925aa9f1dfe5c7032c8b93f81
 
 PKG_LICENSE:=MIT
