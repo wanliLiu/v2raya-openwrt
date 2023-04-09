@@ -173,8 +173,8 @@ msgstr "v2rayA"
 
 #: applications/luci-app-v2raya/htdocs/luci-static/resources/view/v2raya/config.js:56
 msgid ""
-"Kiwiv2rayA is a V2Ray Linux client supporting global transparent proxy, "
+"v2rayA is a V2Ray Linux client supporting global transparent proxy, "
 "compatible with SS, SSR, Trojan(trojan-go), PingTunnel protocols."
 msgstr ""
-"Kiwiv2rayA 是一个易用而强大的，跨平台的 V2Ray 客户端，支持 SS、SSR、"
+"v2rayA 是一个易用而强大的，跨平台的 V2Ray 客户端，支持 SS、SSR、"
 "Trojan（trojan-go）、PingTunnel 协议。"
