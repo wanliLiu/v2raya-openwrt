@@ -10,7 +10,7 @@ PKG_RELEASE:=1
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=http://phone.kiwisec.com:23236/openwrt/
-PKG_HASH:=1453fd81636b69611dd6845da61bc437f69fe7640cfa2c7bb7ff5a388a3d3753
+PKG_HASH:=f1ee01959477a1bafd0412a6800b80a6bb6ccacbaa2d343199f169c83212f61a
 
 PKG_LICENSE:=MIT
 PKG_LICENSE_FILES:=LICENSE
@@ -23,7 +23,7 @@ PKG_USE_MIPS16:=0
 GO_PKG:=github.com/v2fly/v2ray-core/v5
 GO_PKG_BUILD_PKG:=$(GO_PKG)/main
 GO_PKG_LDFLAGS_X:= \
-	$(GO_PKG).build=OpenWrt-Kiwi \
+	$(GO_PKG).build=OpenWrt-Kiwisec \
 	$(GO_PKG).version=$(PKG_VERSION)
 
 include $(INCLUDE_DIR)/package.mk

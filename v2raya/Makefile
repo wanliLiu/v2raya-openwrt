@@ -10,7 +10,7 @@ PKG_RELEASE:=1
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=http://phone.kiwisec.com:23236/openwrt/
-PKG_HASH:=7b2ccb605b551db99e4e89b347be3bc1c5abba2e2d385751bdb02b9df3b23339
+PKG_HASH:=c0d8683f71a94e89c82b448d49f2af78d100ff6077de8b2f7e99275515bd85e9
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)/service
 
 PKG_LICENSE:=AGPL-3.0-only
@@ -23,7 +23,7 @@ PKG_USE_MIPS16:=0
 
 GO_PKG:=github.com/v2rayA/v2rayA
 GO_PKG_LDFLAGS_X:= \
-	$(GO_PKG)/conf.Version=kiwi-$(PKG_VERSION) \
+	$(GO_PKG)/conf.Version=kiwisec-$(PKG_VERSION) \
 	$(GO_PKG)/core/iptables.TproxyNotSkipBr=true
 
 include $(INCLUDE_DIR)/package.mk
@@ -56,7 +56,7 @@ define Download/v2raya-web
 	URL:=http://phone.kiwisec.com:23236/openwrt/
 	URL_FILE:=$(WEB_FILE)
 	FILE:=$(WEB_FILE)
-	HASH:=c1e66263bda9c96cb4e391d633c0e8cdbbfeeda8a052be85389e1af9c61363c1
+	HASH:=20a1cba13bd2f4a32c2ec406110ec0a637fda5db628ecf5291773385802849f2
 endef
 
 GO_PKG_TARGET_VARS:=$(filter-out CGO_ENABLED=%,$(GO_PKG_TARGET_VARS)) CGO_ENABLED=0
