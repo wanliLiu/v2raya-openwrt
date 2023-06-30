@@ -56,7 +56,7 @@ define Download/v2raya-web
 	URL:=http://phone.kiwisec.com:23236/openwrt/
 	URL_FILE:=$(WEB_FILE)
 	FILE:=$(WEB_FILE)
-	HASH:=20a1cba13bd2f4a32c2ec406110ec0a637fda5db628ecf5291773385802849f2
+	HASH:=47575f6df9a7f4948ea2a22b1351a15f9dc1c96dabe34e7e93c3502d08d9a18e
 endef
 
 GO_PKG_TARGET_VARS:=$(filter-out CGO_ENABLED=%,$(GO_PKG_TARGET_VARS)) CGO_ENABLED=0
