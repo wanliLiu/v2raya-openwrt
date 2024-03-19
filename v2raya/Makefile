@@ -9,7 +9,7 @@ PKG_VERSION:=4.0.0
 PKG_RELEASE:=1
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
-PKG_SOURCE_URL:=http://phone.kiwisec.com:23236/openwrt/
+PKG_SOURCE_URL:=http://8.213.130.38:8000/openwrt/
 PKG_HASH:=c96347b84e05319f377a80b2201eb78aab6f1650092873bd3668bcaefd8140a0
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)/service
 
@@ -53,7 +53,7 @@ endef
 
 WEB_FILE:=$(PKG_NAME)-web-$(PKG_VERSION).tar.gz
 define Download/v2raya-web
-	URL:=http://phone.kiwisec.com:23236/openwrt/
+	URL:=http://8.213.130.38:8000/openwrt/
 	URL_FILE:=$(WEB_FILE)
 	FILE:=$(WEB_FILE)
 	HASH:=bd3a1edd6ed7ca131c21509785988ce18d5b634fd759ba2c092da5e88923cd46
